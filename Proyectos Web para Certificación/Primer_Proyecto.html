@@ -1,0 +1,138 @@
+<DOCTYPE html>
+    <html lang="es">
+      <head>
+        <!--La hoja de estilo no se linkea-->
+        <style>
+          body{
+            /* padding:0;
+            margin:0; */
+            background:linear-gradient(60deg,aqua,skyblue,rgb(11, 242, 180));
+            /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+          }
+          #title{
+            text-align:center;
+          }
+          #description{
+            text-align:center;
+            font-size:17px;
+          }
+          #padre1{
+             /* color:white; */
+            background-color:white;
+            width:80%;
+            margin:10px auto;
+            padding:2px 10px;
+            display:flex;
+            flex-flow:wrap block;
+            justify-content:center;
+            align-content:center;
+          }
+          label{
+            font-size:22px;
+            font-weight:bold;
+            padding: 17px 0;
+            margin:20px;
+          }
+  
+          .input{
+           width:90%; 
+           border-radius:7px;
+           margin:5px;
+           padding:6px;
+           font-family:sans-serif;
+          }
+  
+    .ancho{
+      width:90%;
+      height:35px;
+      font-size:14px;
+      font-weight:bolder;
+      border-radius:7px;
+      border:3px black solid;
+    }
+    .jn{
+      margin:10px 0;
+    }
+    textarea{
+      width:90%;
+      border-radius:15px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size:20px;
+      font-weight:bold;
+      padding:0 5px;
+    }
+    [type="submit"]
+    {
+      padding-top:5px;
+      width:90%;
+      background-color:lightyellow;
+      color:black;
+      border-radius:10px;
+      margin: 5px 0;
+      height:33px;
+      transition: background-color 2s;
+      font-weight: bold;
+      font-size:16px;
+    }
+    [type="submit"]:hover{
+      background-color:yellow;
+    }
+        </style>
+  
+        <title>Pagina de prueba</title>
+      </head>
+      <body>
+        <h1 id="title">Formulario de encuesta JorgeN</h1> 
+          <p id="description">Gracias por tomarte el tiempo de responder este formulario de prueba en esta pagina</p>
+  
+  <div id="padre1">
+        
+    <form action="BDDFalse" id="survey-form">
+        <label id="name-label"for="name">Nombre</label><br>
+        <input class="input" id="name"type="text" placeholder="Ingrese su nombre" required><br>
+        <label id="email-label"for="gmail">Correo electronico</label><br>
+        <input class="input" id="email"type="email" placeholder="Ingrese su correo electronico" required><br>
+        <label id="number-label"for="number">Edad (Opcional)</label><br>
+        <input class="input" id="number"type="number" placeholder="Ingrese su edad" min="15" max="99"><br>
+        <h3>¿Te gustaria ser maestro en un futuro?</h3>
+        <input type="radio" name="opt" value="Si">Si<br>
+        <input type="radio" name="opt" value="No">No<br>
+        <input type="radio" name="opt" value="No se aun">No se aun <br>
+        <input type="radio" name="opt" value="quizas" checked>Quizas 
+        <br> 
+        <h3>¿Que te gusta de la programacion?</h3>
+        <input type="checkbox" value="El desarrollo web" name="desi" checked>El desarrollo web<br>
+        <input type="checkbox" value="El desarrollo de video juegos" name="desi">El desarrollo de video juegos<br>
+        <input type="checkbox" value="El desarrollo de aplicaciones para moviles" name="desi">El desarrollo de aplicaciones para moviles<br>
+        <input type="checkbox" value="El desarrolo de aplicaciones para PC" name="desi">El desarrolo de aplicaciones para PC<br>
+    <input type="checkbox" value="Solo lo hago por diversión" name="desi">Solo lo hago por diversión<br>
+            <br>
+        <label  class="jn" for="seleccion">¿Cuantas horas estudias al dia?</label><br>
+        <select name="opcion" id="dropdown" class="ancho">
+          <option value="">Seleccionar:</option>
+          <option value="Menos de 1 hora al dia">Menos de 1 hora al dia</option>
+          <option value="1 a 2 horas al dia">1 a 2 horas al dia
+            </option>
+            <option value="3 a 4 horas al dia">3 a 4 horas al dia
+            </option>
+            <option name="mismo" value="5 a 6 horas al dia">5 a 6 horas al dia
+            </option>
+            <option name="mismo" value="7 a mas horas al dia">7 a mas horas al dia
+            </option>
+            <option>Prefiero no especificarlo
+            </option value="">
+            </select> <br>
+  
+            <label class="jn" for="coments">Deje sus comentarios para la pagina    <label><br>
+          <textarea
+          id="coments"
+          name="comentarios"
+          cols="50%" 
+          rows="4"></textarea><br>
+          <button id="submit"type="submit">Enviar
+          </button>
+    </form>
+  </div>
+  </body>
+  <html>
+  

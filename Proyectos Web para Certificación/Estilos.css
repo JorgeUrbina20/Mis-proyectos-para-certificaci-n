@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(70deg,rgb(198, 239, 246),rgb(176, 244, 193));
+}
+
+/*Primera sección*/
+.cabecera{
+    background:linear-gradient(10deg,rgb(101, 100, 100),rgb(72, 71, 71),rgb(48, 48, 48),rgb(12, 12, 12));
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: flex-end;
+    z-index:1;
+}
+#navbar{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+#navbar>a{
+    font-size: 25px;
+    text-decoration-line: none;
+    transition-property:background-color, color;
+    transition-duration: 1s;
+    padding: 20px;
+    color:blue;
+}
+#navbar>a:hover{
+    background-color: darkblue;
+    color:white;
+}
+.primer-div{
+    background:linear-gradient(50deg,rgb(127, 127, 200),rgb(68, 68, 210),rgb(44, 44, 183),rgb(34, 34, 157),rgb(17, 17, 137));
+    color:white;
+    height:400px;
+    margin:0;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+#welcome-section{
+    text-align: center;
+    font-size: 33px;
+    animation: anima 5s alternate infinite;
+}
+.color{
+    color:black;
+}
+@keyframes anima{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+/*Segunda sección*/
+#projects{
+    background-color: rgba(9, 7, 75, 0.459);
+    text-align: center;
+}
+#section{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-auto-rows:500px;
+    gap: 3em;
+    width: 80%;
+    margin: 0 auto;
+}
+#section>div{
+    background-color: rgb(61, 60, 60);
+    transition-property: transform;
+    transition-duration: 2s;
+}
+#section>div:hover{
+    transform: scale(1.1);
+}
+#section>div>a{
+    text-decoration: none;
+    color:blue;
+    font-size: 26px;
+}
+
+/*Tercera sección*/
+#piedepagina{
+    background-color: gray;
+    height: 500px;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.orden{
+    text-align: center;
+    font-size: 33px;
+}
+
+#orden-img{
+    width: 38%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    gap: 2px;
+    transition: all 2s;
+    cursor: pointer;
+}
+#orden-img>section:hover{
+    transform: translatey(10px);
+    color:darkblue;
+    }
+
+/*Ultima sección*/
+
+footer{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content:flex-end;
+    align-items: center;
+    background-color: grey;
+    font-size: 20px;
+}
+.final{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content:center;
+    align-items: center;
+    width: 80%;
+}
+#profile-link{
+    text-decoration: none;
+    color:black;
+}
+
+@media (max-width:1200px)
+{
+    #navbar{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+    }
+    #navbar>a{
+        font-size: 20px;
+        text-decoration-line: none;
+        transition-property:background-color, color;
+        transition-duration: 1s;
+        padding: 20px;
+        color:blue;
+    }
+
+    #welcome-section{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #section{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-auto-rows:500px;
+        gap: 2em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #section>div{
+        background-color: rgb(61, 60, 60);
+        transition-property: transform;
+        transition-duration: 2s;
+    }
+    #section>div:hover{
+        transform: scale(1);
+    }
+    .orden{
+        text-align: center;
+        font-size: 28px;
+    }
+    
+    #orden-img{
+        width: 38%;
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+        gap: 15px;
+        transition: all 2s;
+        cursor: pointer;
+    }
+
+}

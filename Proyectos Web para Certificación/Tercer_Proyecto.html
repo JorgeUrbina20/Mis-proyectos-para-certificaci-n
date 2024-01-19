@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Naturaleza4.jpg" type="image/x-icon">
+    <title>Aprende JavaScript_JN</title>
+  </head>
+
+  <body>
+    <div id="padre">
+        <div id="hijo1">
+            <div id="sub-hijo">
+                <nav id="navbar">
+                    <header>
+                        <h1 class="centro">Primeros pasos en JavaScript</h1>
+                        <table border="" height="50px" width="100%">
+                            <tr>
+                                <td><a href="#Introduccion" class="nav-link">Introducción</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#¿Que_es_JavaScript?" class="nav-link">¿Que es JavaScript?</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#Tipos_de_datos" class="nav-link">Tipos de datos</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#Scope" class="nav-link">Scope</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#Operadores" class="nav-link">Operadores</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#Estructuras_de_control" class="nav-link">Estructuras de control</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#Secuenciación" class="nav-link">Secuenciación</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#Selección" class="nav-link">Selección</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#Repetición" class="nav-link">Repetición</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#Funciones" class="nav-link">Funciones</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#Uso_de_function" class="nav-link">Uso de function</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#Función_de_flecha" class="nav-link">Función de flecha</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#Función_u_objetos" class="nav-link">Función u objetos</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#Objetos" class="nav-link">Objetos</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#¿Que_es_el_DOM?" class="nav-link">¿Que es el DOM?</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#Uso_del_DOM" class="nav-link">Uso del DOM</a></td>
+                            </tr>
+                        </table>
+                    </header>
+                </nav>
+            </div>
+        </div>
+  <div id="hijo2">
+    <main id="main-doc">
+          <section class="main-section" id="Introduccion">
+            <header>
+                <h2>Introducción</h2>
+            </header>
+                <p>El mundo del desarrollo web es un mundo genial en donde se puede explorar muchas cosas, se puede llegar a adquirir una logica de programación en el cual te ayudara mucho en un futuro, como herramienta tecnologica JavaScript es un lenguaje de programación que te brindara muchas herramientas para el desarrollo web, ¿Que estas esperando? Ven y adentrate a este mundo de la programación frontend.</p>
+          </section>
+
+          <section class="main-section" id="¿Que_es_JavaScript?">
+                <header>
+                    <h2>¿Que es JavaScript?</h2>
+                </header>
+                    <p>
+                JavaScript es un lenguaje de programacion orientado a objetos se usa en la programación de paginas web, creación de aplicaciones web, creación de video juegos y para la interactividad en las paginas web
+                    </p>
+          </section>
+
+    <section class="main-section" id="Tipos_de_datos">
+            <header>
+                <h2>Tipos de datos</h2>
+            </header>
+                <p>
+                En JavaScript existen tipos de datos como en otros lenguajes aunque la manera de declararlos varian o puede decirce que es mas sencilla aqui te mostramos cuales son esos tipos de datos.
+
+        <ul>
+            <li>Number: Es un tipo de dato numerico ya sea entero o real.</li><br>
+        <li>String: Es un campo de caracter o cadena de caracteres</li><br>
+        <li>NULL: El valor de null representa la ausencia de valor</li><br>
+        <li>Undefine: Esto ocurre cuando no tiene un valor asignado y es muy distinto que NULL</li><br>
+        <li>NAN: Esta son las siglas en ingles de (Not A Number) y significa en español que no es un número.</li><br>
+        <li>Booleano: Es un valor logico de <b>True</b> (verdadero) o ya sea <b>False</b> (Falso)</li>
+        </ul>
+        Pero todo esto se puede usar ya sea con <b>Var</b>,<b> Let</b> y <b>Const</b> las dos primeras son para declarar variables y la tercera es para declarar una constante, eso es un dato que no cambia.
+                </p>
+  </section>
+
+        <section class="main-section" id="Scope">
+            <header>
+                <h2>Scope</h2>  
+            </header>  
+                <p>Al hablar sobre el Scope nos referimos al alcance que puede tener una variable, hay dos tipos de Scope: <br>
+                <br>Scope local: Es cuando una variable es local a un modulo o una funcion y no se usa ese valor si no solo en el modulo declarado. <br>
+                Scope global: Tiene mayor alcance ya que como dice la palabra es global y su valor se puede ocupar en cualquier modulo, no tiene limitaciones.<br>
+                </p>
+        </section>
+
+        <section class="main-section" id="Operadores">
+            <header>
+                <h2>Operadores</h2>
+            </header>
+            <div class="orden">
+                <p>Existen tres tipos de operadores en JavaScript estos son:
+                    <ol>
+                        <li>Operadores Aritmeticos</li>
+                        <li>Operadores De Relación</li>
+                        <li>Operadores Lógicos</li>
+                    </ol>
+                    Veamos cuales son cada uno de ellos según su gerarquía.
+                    <h4>Operadores Aritmeticos</h4>
+                    <ol>
+                        <li>() parentésis</li>
+                        <li>** Potencia</li>
+                        <li>* Multiplicación</li>
+                        <li>/ División</li>
+                        <li>% Residúo</li>
+                        <li>+ Suma</li>
+                        <li>- Resta</li>
+                    </ol>
+
+                    <h4>Operadores De Relación</h4>
+                    <ol>
+                        <li>>= (Mayor o igual que)</li>
+                        <li><= (Menor o igual que)</li>
+                        <li>> (Mayor que)</li>
+                        <li>< (Menor que)</li>
+                        <li>== (Igual)</li>
+                        <li>=== (Igualdad estricta)</li>
+                        <li>!= (Desigual)</li>
+                        <li>!== (Desigualdad estricta)</li>
+                    </ol>
+
+                    <h4>Operadores Lógicos</h4>
+                    <ol>
+                        <li>&& y (Conjunción)</li>
+                        <li>|| o (Disyunción)</li>
+                        <li>! no (Negación)</li>
+                    </ol>
+                </p>
+            </div>
+      </section>
+
+          <section class="main-section" id="Estructuras_de_control">
+            <header>
+                <h2>Estructuras de control</h2>
+            </header>
+                <p>En la programación hay algo que es poderoso e importante saber estas son las estructuras de control ellas definen como controlan el programa e incluso los datos ellas son: <br>
+                    <ol>
+                        <li>Secuenciación</li>
+                        <li>Selección</li>
+                        <li>Repetición</li>
+                    </ol>
+                    y vamos hablar sobre cada una de ellas acontinuación.
+                </p>
+          </section>
+
+        <section class="main-section" id="Secuenciación">
+            <header>
+                <h2>Secuenciación</h2>
+            </header>
+                <p>Como lo dice la palabra es una estructura que controla el programa o ya sean datos de forma secuencial ella esta presente siempre en cada codificación y acá esta un ejemplo breve de como trabaja en JavaScript</p>
+        <pre>
+            const nombre="Jorge";
+            console.log ("\n\tEl nombre del usuario es:",nombre);
+            console.log('\n\tTenga un buen dia\n');
+        </pre>
+        </section>
+
+        <section class="main-section" id="Selección">
+            <header>
+            <h2>Selección</h2>
+            </header>
+            <p>La Selección se aplica cuando hay uno, dos o mas caminos que se pueden tomar o mejor dicho desiciones por tomar ellas son conocidas como condicionales ya que con condicionan una variable o un dato y lo convierten en booleano si es <b>true</b> significa que es verdadero y tiende a entrar en la condición es caso de que ella se cumpla, en caso contrario buscara otro camino hasta que el se cumpla. <br>
+            Tambien hay otra tecnica que solo se utiliza en categorias ella es la tecnica de programación <b>Switch</b> y aqui estan ejemplo de cada una de las tecnicas:</p>
+    <pre>
+        <code>
+            <strong>Selección Simple</strong>
+            
+            var number=8;
+
+            if(number<=5)
+            alert('\nNumero menor que 5\n');
+        </code>
+    </pre>
+    <pre>
+        <code>
+            <strong>Selección Doble</strong>
+
+            let number=8;
+
+            if(number<=7)
+            alert('\nNumero menor que 5\n');
+            else
+            alert("Numero igual o mayor que 8");
+        </code>
+    </pre>
+    <pre>
+        <code>
+            <strong>Selección Múltiple</strong>
+
+            const num=8;
+
+            if(num<=7)
+                alert('\nNumero menor que 5\n');
+            else
+                if(num>=8)
+                    alert("Numero igual o mayor que 8");
+                else
+                alert("El dato no es un numero");
+        </code>
+
+
+    Como Podemos Observar, como trabajan cada una de las tecnicas y en la programación no hay limites
+     se puede hacer un if anidado dentro de otro if y pueden haber muchas condicionales dependiendo 
+     de la necesidad que tenga el programa. 
+            </pre>
+    <pre>
+        <code>
+            <strong>Switch</strong>
+
+            let almacena=prompt('Ingrese una letra de la vocal');
+
+            switch(almacena)
+            {
+                case 'A': case 'a':
+                {
+                    alert('Esta es la primera vocal');
+                    break;
+                } 
+
+                case 'E': case 'e':
+                {
+                    alert('Esta es la segunda vocal');
+                    break;
+                } 
+
+                case 'I': case 'i':
+                {
+                    alert('Esta es la tercera vocal');
+                    break;
+                } 
+
+                case 'O': case 'o':
+                {
+                    alert('Esta es la cuarta vocal');
+                    break;
+                } 
+
+                case 'U': case 'u':
+                {
+                    alert('Esta es la quinta vocal');
+                    break;
+                } 
+
+                default:alert("Letra no coincide con las letras de las vocales");
+            }
+        </code>
+
+    El Switch se usa cuando hay una categoria y se pueden colocar numeros tambien no solo letras.
+            </pre>
+        </section>
+
+          <section class="main-section" id="Repetición">
+    <header>
+        <h2>Repetición</h2>
+    </header>
+          <p> La técnica de Repetición se usa al momento de realizar una tarea mas de una vez ellos son conocidos como bucles,ciclos,loop,iteración y lazo estas estructuras repetitivas son:
+            <ul>
+                <li>Ciclo for</li>
+                <li>Ciclo while</li>
+                <li>Ciclo do while</li>
+            </ul>
+            Tambien existen bloques de asignación especiales como es el <strong>contador</strong> (cont) que cuenta el numero de vecez que se ejecuta una tarea y el <strong>acumulador</strong> (acum) que lo que hace es acumular datos ya sean reales o enteros pero no caracteres. <br>
+            <br>
+            Tanto el while como el do while pueden ser controlados por un contador, centinela o ya sea por un acumulador. La estructura basica de cada uno de ellos es la siguiente.
+
+        <pre>
+            <code>
+                <strong>Bucle for</strong>
+
+                var i;
+
+                for(i=1;i<=5;i++)
+                {
+                    //Conjunto de acciones por hacer
+                }
+            </code>
+        </pre> <br>
+
+        <pre>
+            <code>
+                <strong>While controlado por un contador</strong>
+
+                let cont=1;
+
+                while(cont < 10)
+                {
+                    //Conjunto de acciones a realizar
+                    cont+=1;
+                }
+            </code>
+        </pre> <br>
+        <pre>
+            <code>
+                <strong>While controlado por un centinela</strong>
+
+                var centi=prompt("Ingrese un numero distinto a 0");
+
+                while(centi!=0)
+                {
+                    //Conjunto de acciones a realizar
+                    var centi=prompt("Ingrese un numero distinto a 0");
+                }
+            </code>
+        </pre> <br>
+        <pre>
+            <code>
+                <strong>While controlado por un acumulador</strong>
+
+                let suma=0;
+
+                while(suma < 100)
+                {
+                    var valor=prompt("Ingrese un valor");
+                    suma+=valor;
+                }
+            </code>
+        </pre> <br>
+        <pre>
+            <code>
+                <strong>Do while controlado por un centinela</strong>
+
+                do{
+                    //Conjunto de acciones a realizar
+                    var centi=prompt("Ingrese un numero distinto a 0");
+                }
+                while(centi!=0);
+            </code>
+        </pre> <br>
+            Estas tecnicas son utiles al momento de realizar una tarea muchas veces al igual se pueden anidar bucles. <br>
+<br>
+<ul>
+    <li>Si desea saber mas sobre los bloques de asignación especiales <a href="https://solologicayalgoritmia.blogspot.com/2008/05/operador-asignacion-contador-y.html" target="_blank" class="enlaces">cliquee aqui</a></li>
+    <li>Si desea aprender mas sobre los bucles <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration" target="_blank" class="enlaces">presione aqui
+    </a></li>
+</ul>            
+          </p>
+          </section>
+
+          <section class="main-section" id="Funciones">
+                <header>
+                    <h2>Funciones</h2> 
+                </header>
+                <p>Una función es aquella la cual un problema se vuelve en subproblemas o mejor dicho en problemas mas pequeños tambien es conocida por el nombre de "Divide y Venceras". Una función puede ser llamada o invocada por medio de un bloque de asignación o por medio de una instrucción de salida. <br>
+                <br> <strong>Parametros</strong> <br><br>
+                En las funciones exiten el paso de parametros y en <b>JavaScript
+                </b> son parametros por valor que se le mandan a las funciones pero en otros lenguajes de programación como <b>C o C++</b> existe el paso de parametros por referencia lo lindo de este lenguaje de programación como es <b>JavaScript</b> es que, es dínamico e incluso con una estructura de datos llamada arreglo se puede definir un tamaño o no, ya que el es dínamico. Estas son algunas de las caracteristicas del paso de parametros:
+                <ul>
+                    <li>Mismo tipo de datos tanto en la llamada de la función como en la definición de ella.</li>
+                    <li>Mismo orden en el paso de parametros.</li>
+                    <li>Misma cantidad de parametros tanto en la definición del modulo. como en la llamada a la función.</li>
+                </ul></p>
+          </section>
+
+          <section class="main-section" id="Uso_de_function">
+                <header>
+                    <h2>Uso de function</h2>
+                </header>
+                <p>En JavaScript existe una palabra reservada que es <strong>function
+                </strong> ella lo que hace es que indica que es una función este es un breve ejemplo de una función que sumara dos numeros: <br>
+        <pre>
+            <code>
+                function sumar (n1,n2)
+                {
+                    return n1+n2;
+                }
+
+                var recibe=sumar(5,9);
+                console.log("El resultado de la suma es: %d",recibe)
+            </code>
+        </pre>
+                Ten en cuenta esto, esta función solamente esta sumando dos números pero el enfoque de ellas es resolver problemas mas complejos con con este breve ejemplo sencillo te puedes dar cuenta de como trabaja, ademas la función tiene un especificador de formato y esto no esta malo ya que se puede hacer y es mejor a si especificamos que valor mandara por pantalla esto lo hereda de su abuelo C. Lo que es el punto y coma (;) JavaScript es flexible con esto ya que no importara si se coloca o no el lo coloca al final, pero por buena practica se hace. 
+                <h3>Este es un ejemplo con la misma función pero tecleado por el usuario</h3>
+        <pre>
+            <code>
+                function sumar (n1,n2)
+                {
+
+                    return parseInt(n1) + parseInt(n2);
+                    /*Esto es para que lo lea como un numero y no como una letra ya que 
+                    el signo '+' significa concatenación tambien.*/
+                }
+
+                var num1=prompt("\n\tTeclee un número:");
+                var num2=prompt("\n\tTeclee otro número:");
+                var recibe =sumar(num1,num2);
+                console.log("El resultado de la suma es: %d",recibe);
+            </code>
+        </pre>prompt es una palabra reservada que ya la hemos ocupado en otros ejemplos lo que hace es que le pide al usuario te digite algo, ya sea un numero entero o real y tambien permite ingresar un texto o mejor dicho una cadena de caracter.</p>
+          </section>
+
+          <section class="main-section" id="Función_de_flecha">
+             <header>
+                <h2>Función de flecha</h2>  
+             </header> 
+             <p>Esto es lo mismo que una función común solo que la sintaxis cambia un poco, este es un ejemplo con las misma funciones de antes:</p>
+
+        <pre>
+        let sumar= (n1,n2)=>
+            {
+                return n1*n2;
+            }
+
+            var recibe=sumar(5,9);
+            console.log("El resultado de la suma es: %d",recibe)
+        </pre><br>
+        <pre>
+        let sumar = (n1,n2) =>{
+
+                return parseInt(n1) % parseInt(n2);//Este es el módulo
+            }
+
+            var num1=prompt("\n\tTeclee un número:");
+            var num2=prompt("\n\tTeclee otro número:");
+            var recibe =sumar(num1,num2);
+            console.log("El resultado de la suma es: %d",recibe);
+        </pre>
+          </section>
+
+          <section class="main-section" id="Función_u_objetos">
+                <header>
+                    <h2>Función u objetos</h2>
+                </header>
+                <p>Aqui tienes una lista corta con ejemplos de como funcionan los objetos en <b>JavaScript</b>
+        <pre>
+            var palabra="Hola mundo"
+
+            console.log(palabra.length); /*Da el tamaño de una cadena incluyendo los
+            espacios en blanco*/ 
+        </pre>
+        <pre>
+            var palabra="Hola mundo"
+
+            console.log(palabra.slice(4,5)); /*Da una parte del texto y recibe como parametros
+                dos números el primero es desde donde iniciara y el segundo es hasta donde finaliza.*/
+            
+            console.log(palabra.substring(4,5));
+            /*Es lo mismo como el objeto slice.*/
+        </pre>
+        <pre>
+            var palabra="Hola mundo";
+            var sigue=" de la programación";
+
+            console.log(palabra+sigue); //Concatena una cadena con otra. 
+            console.log(palabra.concat(sigue)); //Concatena una cadena con otra.
+        </pre>   
+        <pre>
+            var palabra="Hola mundo";
+
+            console.log(palabra.replace("mundo","mundo de la programación"));
+            //Reenplaza un texto existente por otro.
+        </pre>  
+        <pre>
+            var palabra="Hola mundo";
+
+            console.log(palabra.trim());//Elimina espacios en blanco
+        </pre>
+        <pre>
+            var palabra="Hola mundo. De la programación";
+
+            console.log(palabra.split("."));
+        /*Divide un texto por cualquier caracter que coloquemos por parametro. En este
+            caso es por un punto.*/
+        </pre>
+        <pre>
+            var palabra="Hola mundo";
+
+            console.log(palabra[7]);//Da la posición del arreglo "palabra"
+            //Tambien se puede con un objeto como es el siguiente.
+            console.log(palabra.charAt(7));
+        </pre> 
+                y esa son algunas de las funciones que podemos utilizar en <b>JavaScript.</b>    
+                </p>
+          </section>
+
+          <section class="main-section" id="Objetos">
+                <header>
+                    <h2>Objetos</h2>
+                </header>
+                <p>Los objetos en <b>JavaScript</b> son colecciones de propiedades, un objetos esta compuesto por su nombre, una clave y un valor que posee esa clave.
+                    <h4>Ejemplo de un objeto</h4> 
+        <pre>
+            const persona = /*Es mi objeto*/
+            {
+                /*Es mi clave -> */ edad=20, /*Es el valor de mi clave*/
+                sexo:"Masculino",
+                nombre:"Jose",
+                altura:1.7
+            }
+
+            Podemos acceder a un objeto de dos maneras
+            
+            <b>accediendo a todo el objeto.</b>
+            
+            console.log(persona);
+
+            <b>accediendo una parte del objeto 1ra forma</b> 
+            
+            console.log(persona.nombre);
+
+            <b>accediendo a una parte del objeto 2da forma</b>
+            
+            console.log(persona["sexo"]);
+        </pre></p>
+          </section>
+          
+          <section class="main-section" id="¿Que_es_el_DOM?">
+                <header>
+                    <h2>¿Que es el DOM?</h2>
+                </header>
+                <p>
+                </p>
+          </section>
+
+          <section class="main-section" id="Uso_del_DOM">
+            <header>
+                <h2>Uso del DOM</h2>
+            </header>
+            <p></p>
+          </section>
+        </main>
+</div>  
+    </div>
+    <!--Hacer adaptable a telefono (Responsive)-->
+  </body>
+</html>

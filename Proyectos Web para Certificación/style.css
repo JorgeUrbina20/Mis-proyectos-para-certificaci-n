@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-image:url(Naturaleza4.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; */
+}
+::selection{
+    background-color: darkblue;
+    color: tomato;
+}
+#padre{
+    display: grid;
+    grid-template-columns: 17% 82%;
+    grid-template-rows: auto;
+    gap: 8px;
+}
+
+/*Primer hijo de la grilla*/
+#hijo1
+{
+    text-align: center;
+    position: relative;
+} 
+#sub-hijo{
+    position: fixed;
+    height: 630px;
+    width: 17%;
+    overflow: auto; 
+}
+.centro{
+    color: black;
+}
+td{
+    border-radius:15%;
+    padding:11px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+td:hover{
+    background-color: black;
+    cursor:pointer;
+    opacity: 0.8;
+}
+.nav-link{
+    text-decoration-line: none;
+    font-size: 17px;
+    font-weight: bolder;
+    color:rgb(93, 93, 93);
+    transition-property:color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.nav-link:hover{
+    color:yellow;
+}
+
+/*Segundo hijo de la grilla*/
+#hijo2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 17px;
+    color:black;
+}
+.orden{            /*Es un div para centrar la parte que dice operadores*/
+    margin: 0 auto;
+    height: auto;
+    width: 40%;
+    padding: 7px;
+}
+h2{
+    text-align: center;
+}
+pre{
+    background-color:black;
+    width: 90%;
+    margin: 15px 5%;
+    font-size: 15px;
+    cursor:context-menu;
+    color:green;
+}
+.enlaces{
+    text-decoration-line: none;
+    color:black;
+}
+
+/*Hacer adaptable a telefono (Responsive)*/
+@media  (max-width:1100px){
+    #padre{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-auto-rows: auto;
+        gap: 2em;
+    }
+    #hijo1
+{
+    text-align:left;
+}
+#sub-hijo{
+    height: 230px;
+    width: 100%;
+    overflow: auto; 
+    position: relative;
+}
+.centro{
+    color: black;
+    text-align: center;
+}
+td{
+    border-radius:5%;
+    padding:5px;
+    cursor:pointer;
+    transition:none;
+}
+td:hover{
+    background-color: rgb(250, 250, 250);
+    opacity: 0.9;
+}
+.nav-link{
+    text-decoration-line: none;
+    font-size: 17px;
+    font-weight: bolder;
+    color:rgb(15, 15, 15);
+    transition-property:color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.nav-link:hover{
+    color:rgb(17, 17, 16);
+}
+pre{
+    background-color:black;
+    margin: 0;
+    padding-left: -40px;
+    padding-right:180px;
+    width: 85%;
+    font-size: 10px;
+    cursor:context-menu;
+    color:green;
+}
+}

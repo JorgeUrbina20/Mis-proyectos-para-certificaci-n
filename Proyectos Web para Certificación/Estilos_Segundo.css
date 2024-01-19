@@ -1,0 +1,46 @@
+main
+      {
+        background: linear-gradient(90deg,#A9A9A9,#A9A9A9,#F2F3F4,#922929,#660000);
+        padding:5px 0;
+        text-align:center;
+      }
+      #img-div{
+        margin: 0 auto;
+        padding:1px 0;
+        height:auto;
+        width:80%;
+        background-color:grey;
+      }
+      #area {
+    display: block;
+    width: 100%;
+    clear: both;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Courier New;
+    color: #a5a5a5;
+}
+
+    #cuerpo{
+        display:flex;
+        flex-flow: wrap column;
+        justify-content:center;
+        align-content:center;
+    }
+
+    #image{
+      display:block;
+      max-width:100%;
+      height:auto;
+    }
+    section{
+      background: linear-gradient(90deg,#A9A9A9,#A9A9A9,#F2F3F4,#922929,#660000);
+      width:80%;
+      margin:0 auto;
+      text-align:center;
+    }
+    a{
+      text-decoration:none;
+      color:black;
+    }
